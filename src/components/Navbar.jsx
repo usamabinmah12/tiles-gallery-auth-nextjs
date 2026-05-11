@@ -1,9 +1,19 @@
-
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import NavLink from "./NavLink";
+import { authClient, useSession } from "@/lib/auth-client";
 
 const Navbar = () => {
+  // const session = useSession();
+  const { data: session, status } = useSession();
+  // console.log(isPending, "ispending");
+  console.log(session , "session");
+  const User = session?.user;
+  console.log(User , "user");
+  // const {name , email, password} = User;
+  const [isLogin, setIsLogin] = useState(false);
+  // console.log(User?.name, "user");
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm container mx-auto">
@@ -26,29 +36,54 @@ const Navbar = () => {
                 />{" "}
               </svg>
             </div>
-            
           </div>
-          <Link href={"/"} className="btn btn-ghost text-xl">TailesGL</Link>
+          <Link href={"/"} className="btn btn-ghost text-xl">
+            TailesGL
+          </Link>
         </div>
-        
-          <div className="flex  items-center gap-4 w-80">
-           
-              <NavLink  href={"/"} > <button className="p-2 ">Home</button> </NavLink>
-            
-           
-             
-                <NavLink href={"/all-tiles"}> <button className="p-2">All Tiles</button> </NavLink>
-               
-              
-            
-            
-              <NavLink className="p-2" href={"/myProfile"}> <button className="p-1"> My profile</button> </NavLink>
-            
-          </div>
-       
+
+        <div className="flex  items-center gap-4 w-80">
+          <NavLink href={"/"}>
+            {" "}
+            <button className="p-2 ">Home</button>{" "}
+          </NavLink>
+
+          <NavLink href={"/all-tiles"}>
+            {" "}
+            <button className="p-2">All Tiles</button>{" "}
+          </NavLink>
+
+          <NavLink className="p-2" href={"/myProfile"}>
+            {" "}
+            <button className="p-1"> My profile</button>{" "}
+          </NavLink>
+        </div>
+
         <div className="navbar-end">
-          <Link href={'/login'} className="btn">Login</Link>
-        </div>
+  {User ? (
+    <div className="flex gap-4 items-center">
+      <h2>Hello, {User?.name}</h2>
+
+      <button
+        className="btn btn-primary"
+        onClick={ () => {
+          try {
+             authClient.signOut();
+            // window.location.href = "/"; 
+          } catch (error) {
+            console.log(error);
+          }
+        }}
+      >
+        Logout
+      </button>
+    </div>
+  ) : (
+    <Link href="/login" className="btn btn-primary">
+      Login
+    </Link>
+  )}
+</div>
       </div>
     </div>
   );

@@ -20,12 +20,15 @@ const LoginPage = () => {
           rememberMe: true,
           callbackURL: "/",
         });
+        if(error){
+          alert(error.message);
+          return;
+        }
         if(data) {
           alert("Login is succesfull!!");
+            // window.location.href = "/"
         }
-        else {
-          alert(error.message);
-        }
+       
     }
   return (
     <div className="container mx-auto bg-slate-200 p-5">
@@ -57,7 +60,7 @@ const LoginPage = () => {
         </div>
         
       </form>
-        <p>Don't Have account ? <Link href={"/register"} className="text-blue-400"> Register</Link></p>
+        <p> Don't Have account ? <Link href={"/register"} className="text-blue-400"> Register</Link></p>
       </div>
       
     </div>
