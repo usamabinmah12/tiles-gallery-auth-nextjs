@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import NavLink from "./NavLink";
 import { authClient, useSession } from "@/lib/auth-client";
+import Image from "next/image";
 
 const Navbar = () => {
   // const session = useSession();
@@ -38,7 +39,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link href={"/"} className="btn btn-ghost text-xl">
-            TailesGL
+            TilesGL
           </Link>
         </div>
 
@@ -62,7 +63,8 @@ const Navbar = () => {
         <div className="navbar-end">
   {User ? (
     <div className="flex gap-4 items-center">
-      <h2>Hello, {User?.name}</h2>
+      
+      <h2 className="font-bold">Hello, {User?.name}</h2>
 
       <button
         className="btn btn-primary"

@@ -3,6 +3,7 @@ import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { FaGoogle } from "react-icons/fa";
 
 const LoginPage = () => {
     const {
@@ -30,6 +31,12 @@ const LoginPage = () => {
         }
        
     }
+    const handleGoogleSignin = async() => {
+          
+      const data = await authClient.signIn.social({
+          provider: "google",
+        });
+      }
   return (
     <div className="container mx-auto bg-slate-200 p-5">
       <div className="bg-white text-center rounded-xl space-y-2  ">
@@ -61,6 +68,14 @@ const LoginPage = () => {
         
       </form>
         <p> Don't Have account ? <Link href={"/register"} className="text-blue-400"> Register</Link></p>
+        <div>
+                <div className="font-bold">OR</div>
+                <div className="flex items-center justify-center ">Login with </div> 
+                <div className=" flex items-center justify-center">
+                        <button onClick={handleGoogleSignin} className="flex justify-center items-center text-center text-red-500 font-bold"> <span className="mx-4"><FaGoogle  /></span>Google</button> 
+                </div>
+                
+              </div>
       </div>
       
     </div>

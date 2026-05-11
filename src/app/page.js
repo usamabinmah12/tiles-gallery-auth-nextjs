@@ -8,6 +8,7 @@ export default async function Home() {
   const data = await allTiles();
   console.log(data);
   return (
+    
     <div className="container mx-auto bg-slate-100">
       <Banner></Banner>
       <div>

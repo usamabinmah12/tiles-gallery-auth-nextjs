@@ -3,6 +3,7 @@ import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { FaGoogle } from "react-icons/fa";
 
 const RegisterPa = () => {
   const {
@@ -30,10 +31,16 @@ const RegisterPa = () => {
     }
    console.log(data, "data registred");
   };
+  const handleGoogleSignin = async() => {
+      
+  const data = await authClient.signIn.social({
+      provider: "google",
+    });
+  }
 
   return (
-    <div className="container mx-auto bg-slate-200 p-5">
-      <div className="bg-white text-center rounded-xl space-y-2  ">
+    <div className="container mx-auto bg-slate-200 p-5 m-5">
+      <div className="bg-white text-center rounded-xl space-y-2 m-6 ">
         <h3 className="text-2xl font-bold"> Please Register your account</h3>
 
         <form onSubmit={handleSubmit(formLogin)}>
@@ -83,8 +90,19 @@ const RegisterPa = () => {
           <Link href={"/login"} className="text-blue-400">
             Login
           </Link>
+          
         </p>
+        <div>
+        <div className="font-bold">OR</div>
+        <div className="flex items-center justify-center ">Register with </div> 
+        <div className=" flex items-center justify-center">
+                <button onClick={handleGoogleSignin} className="flex justify-center items-center text-center text-red-500 font-bold"> <span className="mx-4"><FaGoogle  /></span>Google</button> 
+        </div>
+        
       </div>
+      
+      </div>
+      
     </div>
   );
 };

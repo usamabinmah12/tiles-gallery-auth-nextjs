@@ -1,5 +1,6 @@
 import { allTiles } from '@/lib/data';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const AllTilesPage = async () => {
@@ -20,7 +21,7 @@ const AllTilesPage = async () => {
                      <div className="card-title">{tiles.title}</div>
                      <div>{tiles.description}</div>
                      <div className="card-actions justify-end">
-                       <button className="btn btn-primary">View Details</button>
+                       <Link href={`/details/${tiles.id}`}> <button  className="btn btn-primary">View Details</button></Link>
                      </div>
                    </div>
                  </div>
