@@ -1,0 +1,122 @@
+[
+  {
+    "id": "tile_001",
+    "title": "Ceramic Blue Tile",
+    "description": "Premium ceramic tile with blue glaze finish",
+    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+    "category": "ceramic",
+    "price": 45.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_002",
+    "title": "Marble White Tile",
+    "description": "Elegant white marble tile for modern interiors",
+    "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d",
+    "category": "marble",
+    "price": 65.50,
+    "currency": "USD",
+    "dimensions": "80x80 cm",
+    "material": "Marble",
+    "inStock": true
+  },
+  {
+    "id": "tile_003",
+    "title": "Wood Finish Tile",
+    "description": "Natural wood texture porcelain tile",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "porcelain",
+    "price": 55.25,
+    "currency": "USD",
+    "dimensions": "120x20 cm",
+    "material": "Porcelain",
+    "inStock": false
+  },
+  {
+    "id": "tile_004",
+    "title": "Glossy Black Tile",
+    "description": "Luxury glossy black tile for walls and floors",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "category": "ceramic",
+    "price": 49.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_005",
+    "title": "Stone Texture Tile",
+    "description": "Durable stone-look tile for outdoor and indoor use",
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "category": "stone",
+    "price": 70.00,
+    "currency": "USD",
+    "dimensions": "90x90 cm",
+    "material": "Stone",
+    "inStock": true
+  },
+  {
+    "id": "tile_006",
+    "title": "Mosaic Green Tile",
+    "description": "Stylish green mosaic tile for kitchen backsplash",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "category": "mosaic",
+    "price": 39.99,
+    "currency": "USD",
+    "dimensions": "30x30 cm",
+    "material": "Glass",
+    "inStock": true
+  },
+  {
+    "id": "tile_007",
+    "title": "Concrete Grey Tile",
+    "description": "Modern concrete-look tile with matte finish",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "porcelain",
+    "price": 58.75,
+    "currency": "USD",
+    "dimensions": "75x75 cm",
+    "material": "Porcelain",
+    "inStock": true
+  },
+  {
+    "id": "tile_008",
+    "title": "Rustic Brown Tile",
+    "description": "Rustic brown textured tile for outdoor spaces",
+    "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607",
+    "category": "stone",
+    "price": 62.40,
+    "currency": "USD",
+    "dimensions": "45x45 cm",
+    "material": "Stone",
+    "inStock": false
+  },
+  {
+    "id": "tile_009",
+    "title": "Golden Pattern Tile",
+    "description": "Decorative golden pattern tile for luxury interiors",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "decorative",
+    "price": 85.00,
+    "currency": "USD",
+    "dimensions": "60x120 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_010",
+    "title": "Bathroom Anti-Slip Tile",
+    "description": "Anti-slip tile designed for bathrooms and wet areas",
+    "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
+    "category": "bathroom",
+    "price": 47.30,
+    "currency": "USD",
+    "dimensions": "50x50 cm",
+    "material": "Porcelain",
+    "inStock": true
+  }
+]

@@ -1,5 +1,7 @@
+
 import Link from "next/link";
 import React from "react";
+import NavLink from "./NavLink";
 
 const Navbar = () => {
   return (
@@ -31,16 +33,16 @@ const Navbar = () => {
         
           <div className="flex  items-center gap-4 w-80">
            
-              <Link href={"/"}> <button>Home</button> </Link>
+              <NavLink  href={"/"} > <button className="p-2 ">Home</button> </NavLink>
             
            
              
-                <Link href={"/all-tiles"}  className=" bg-amber-400 "> <button className="">All Tiles</button> </Link>
+                <NavLink href={"/all-tiles"}> <button className="p-2">All Tiles</button> </NavLink>
                
               
             
             
-              <Link href={"/myProfile"}>My profile</Link>
+              <NavLink className="p-2" href={"/myProfile"}> <button className="p-1"> My profile</button> </NavLink>
             
           </div>
        

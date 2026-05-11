@@ -1,10 +1,38 @@
+import Banner from "@/components/Banner";
 import Navbar from "@/components/Navbar";
+import { allTiles } from "@/lib/data";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+  const data = await allTiles();
+  console.log(data);
   return (
-   
-   <div className="container mx-auto"> this is home</div>
-    
+    <div className="container mx-auto bg-slate-100">
+      <Banner></Banner>
+      <div>
+        <h3 className="text-3xl font-bold space-x-3.5 gap-x-3.5">Featured Tiles</h3>
+      </div>
+      <div className="grid grid-cols-2 gap-2.5 justify-evenly m-4">
+        {data.slice(0,4).map((tiles) => (
+        <div key={tiles.id} className="card bg-base-100 shadow-sm m-3">
+        <figure>
+          <Image
+            src={tiles.image}
+            width={500}
+            height={300}
+            alt={tiles.material} />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">{tiles.title}</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">View Details</button>
+          </div>
+        </div>
+      </div>
+      ))}
+      </div>
+      
+    </div>
   );
 }
