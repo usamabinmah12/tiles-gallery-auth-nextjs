@@ -2,6 +2,7 @@ import Banner from "@/components/Banner";
 import Navbar from "@/components/Navbar";
 import { allTiles } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Home() {
   const data = await allTiles();
@@ -26,7 +27,8 @@ export default async function Home() {
           <h2 className="card-title">{tiles.title}</h2>
           <p>{tiles.description}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">View Details</button>
+            <Link href={`/details/${tiles.id}`}> <button  className="btn btn-primary">View Details</button></Link>
+            
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 [
   {
-    "id": "tile_001",
+    "id": "01",
     "title": "Ceramic Blue Tile",
-    "description": "Premium ceramic tile with blue glaze finish",
+    "description": "Premium ceramic tile with a rich blue glaze finish, designed to bring a calm and elegant aesthetic to interior walls and floors. Perfect for modern homes and decorative spaces.",
     "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
     "category": "ceramic",
     "price": 45.99,
@@ -14,7 +14,7 @@
   {
     "id": "tile_002",
     "title": "Marble White Tile",
-    "description": "Elegant white marble tile for modern interiors",
+    "description": "Elegant white marble tile that enhances luxury and brightness in any space. Ideal for modern interiors, giving a clean and timeless architectural look.",
     "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d",
     "category": "marble",
     "price": 65.50,
@@ -26,7 +26,7 @@
   {
     "id": "tile_003",
     "title": "Wood Finish Tile",
-    "description": "Natural wood texture porcelain tile",
+    "description": "Natural wood-textured porcelain tile that combines the warmth of wood with the durability of ceramic. Perfect for cozy interiors and modern rustic designs.",
     "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
     "category": "porcelain",
     "price": 55.25,
@@ -38,7 +38,7 @@
   {
     "id": "tile_004",
     "title": "Glossy Black Tile",
-    "description": "Luxury glossy black tile for walls and floors",
+    "description": "Luxury glossy black tile with a reflective surface that adds depth and sophistication to any space. Ideal for premium walls and stylish floor designs.",
     "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
     "category": "ceramic",
     "price": 49.99,
@@ -50,7 +50,7 @@
   {
     "id": "tile_005",
     "title": "Stone Texture Tile",
-    "description": "Durable stone-look tile for outdoor and indoor use",
+    "description": "Durable stone-look tile designed for both indoor and outdoor use. Offers natural rugged aesthetics with long-lasting strength and weather resistance.",
     "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
     "category": "stone",
     "price": 70.00,
@@ -62,7 +62,7 @@
   {
     "id": "tile_006",
     "title": "Mosaic Green Tile",
-    "description": "Stylish green mosaic tile for kitchen backsplash",
+    "description": "Stylish green mosaic tile perfect for kitchen backsplashes and decorative walls. Adds a fresh, vibrant, and artistic touch to interiors.",
     "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
     "category": "mosaic",
     "price": 39.99,
@@ -74,7 +74,7 @@
   {
     "id": "tile_007",
     "title": "Concrete Grey Tile",
-    "description": "Modern concrete-look tile with matte finish",
+    "description": "Modern concrete-look porcelain tile with a smooth matte finish, ideal for minimalist and industrial-style interior designs.",
     "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
     "category": "porcelain",
     "price": 58.75,
@@ -86,7 +86,7 @@
   {
     "id": "tile_008",
     "title": "Rustic Brown Tile",
-    "description": "Rustic brown textured tile for outdoor spaces",
+    "description": "Rustic brown textured tile designed for outdoor patios and traditional spaces. Provides a natural earthy look with strong durability.",
     "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607",
     "category": "stone",
     "price": 62.40,
@@ -98,7 +98,7 @@
   {
     "id": "tile_009",
     "title": "Golden Pattern Tile",
-    "description": "Decorative golden pattern tile for luxury interiors",
+    "description": "Decorative golden pattern tile crafted for luxury interiors. Enhances elegance and creates a premium artistic wall or floor design.",
     "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
     "category": "decorative",
     "price": 85.00,
@@ -110,7 +110,7 @@
   {
     "id": "tile_010",
     "title": "Bathroom Anti-Slip Tile",
-    "description": "Anti-slip tile designed for bathrooms and wet areas",
+    "description": "Special anti-slip bathroom tile designed for wet areas. Ensures safety while maintaining a clean and modern interior appearance.",
     "image": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef",
     "category": "bathroom",
     "price": 47.30,
