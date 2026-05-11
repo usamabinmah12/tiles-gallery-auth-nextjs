@@ -64,7 +64,7 @@ const LoginPage = () => {
             {errors.password && (<p className="text-red-400"> {errors.password.message}</p>)}
         </fieldset>
         <div className=" flex justify-center space-y-3 m-3">
-            <button className="btn items-center">Login</button>
+            <button className="btn items-center btn-primary">Login</button>
         </div>
         
       </form>

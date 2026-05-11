@@ -83,7 +83,7 @@ const RegisterPa = () => {
             )}
           </fieldset>
           <div className=" flex justify-center space-y-3 m-3">
-            <button className="btn items-center">Submit</button>
+            <button className="btn items-center btn-primary">Register Now</button>
           </div>
         </form>
         <p>
