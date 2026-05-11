@@ -27,7 +27,7 @@ const Banner = () => {
       </div>
       <div className="m-3 flex items-center">
             <button className="btn bg-mauve-900 text-white">New Arrivals</button>
-            <p className="text-emerald-600"><Marquee pauseOnHover={true}>Premium Quality Tiles | Elegant Floor & Wall Designs | Affordable Prices | Modern & Classic Collections | Visit Our Showroom Today!</Marquee></p>
+            <div className="text-emerald-600"><Marquee pauseOnHover={true}>Premium Quality Tiles | Elegant Floor & Wall Designs | Affordable Prices | Modern & Classic Collections | Visit Our Showroom Today!</Marquee></div>
         </div>
     </div>
   );

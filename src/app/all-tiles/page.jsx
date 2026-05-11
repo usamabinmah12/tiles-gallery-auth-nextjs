@@ -17,8 +17,8 @@ const AllTilesPage = async () => {
                        alt={tiles.material} />
                    </figure>
                    <div className="card-body">
-                     <h2 className="card-title">{tiles.title}</h2>
-                     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                     <div className="card-title">{tiles.title}</div>
+                     <div>{tiles.description}</div>
                      <div className="card-actions justify-end">
                        <button className="btn btn-primary">View Details</button>
                      </div>
