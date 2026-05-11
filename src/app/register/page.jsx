@@ -20,6 +20,14 @@ const RegisterPa = () => {
       
       callbackURL: "/",
     });
+    if(error) {
+      console.log(error.message);
+      return;
+    }
+    else {
+      alert("Data is stored succesfully");
+      window.location.href = "/"
+    }
    console.log(data, "data registred");
   };
 
