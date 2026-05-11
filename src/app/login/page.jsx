@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { FaGoogle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const LoginPage = () => {
     const {
@@ -22,11 +23,11 @@ const LoginPage = () => {
           callbackURL: "/",
         });
         if(error){
-          alert(error.message);
+          toast(error.message);
           return;
         }
         if(data) {
-          alert("Login is succesfull!!");
+          toast("Login is succesfull");
             // window.location.href = "/"
         }
        
@@ -63,7 +64,7 @@ const LoginPage = () => {
             {errors.password && (<p className="text-red-400"> {errors.password.message}</p>)}
         </fieldset>
         <div className=" flex justify-center space-y-3 m-3">
-            <button className="btn items-center">Submit</button>
+            <button className="btn items-center">Login</button>
         </div>
         
       </form>

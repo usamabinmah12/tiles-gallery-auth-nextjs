@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { FaGoogle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const RegisterPa = () => {
   const {
@@ -22,11 +23,11 @@ const RegisterPa = () => {
       callbackURL: "/",
     });
     if(error) {
-      console.log(error.message);
+      toast(error.message);
       return;
     }
     else {
-      alert("Data is stored succesfully");
+      toast("Data is stored succesfully");
       window.location.href = "/"
     }
    console.log(data, "data registred");
