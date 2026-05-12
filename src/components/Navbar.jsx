@@ -12,11 +12,8 @@ const Navbar = () => {
   return (
     <div className="shadow-sm bg-base-100">
       <div className="navbar container mx-auto px-4">
-        
-        {/* Navbar Start */}
         <div className="navbar-start">
-          
-          {/* Mobile Dropdown */}
+   
           <div className="dropdown lg:hidden">
             <div tabIndex={0} role="button" className="btn btn-ghost">
               <svg
@@ -35,13 +32,12 @@ const Navbar = () => {
               </svg>
             </div>
 
-            {/* Mobile Menu */}
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <NavLink href={"/"}>Home</NavLink>
+                <NavLink href={"/"}>Homepage</NavLink>
               </li>
 
               <li>
@@ -54,13 +50,12 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Logo */}
           <Link href={"/"} className="btn btn-ghost text-xl">
             TilesGL
           </Link>
         </div>
 
-        {/* Desktop Menu */}
+       
         <div className="navbar-center hidden lg:flex">
           <div className="flex items-center gap-4">
             <NavLink href={"/"}>
