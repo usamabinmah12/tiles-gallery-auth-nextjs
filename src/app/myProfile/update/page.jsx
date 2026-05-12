@@ -19,14 +19,18 @@ const Page = () => {
     };
 
     return (
-        <div className="container mx-auto bg-slate-200">
-            <div className="flex flex-col items-center justify-center m-10 p-3.5">
+       <div className="flex flex-col items-center justify-center m-5 bg-sky-700 rounded-3xl">
+        <div className="space-x-5 mx-3 p-6 text-amber-100">
+          
+          <label className="text-2xl font-semibold">
+            Add Your New Name Here
+          </label>
                 <input
                     type="text"
                     placeholder="Enter name for update"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="input input-bordered"
+                    className="input input-bordered text-black"
                 />
                 <Link href={"/"}><button
                     onClick={upd}

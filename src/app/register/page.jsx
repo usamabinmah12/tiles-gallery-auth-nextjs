@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
-const RegisterPa = () => {
+const RegisterPage = () => {
   const {
     register,
     handleSubmit,
@@ -16,9 +16,8 @@ const RegisterPa = () => {
     console.log(data, "data");
     const {name , email , password} = data;
     const { data: res, error } = await authClient.signUp.email({
-      name: name, // required
-      email:email, // required
-      password: password, // required
+      name: name,
+      email:email,       password: password, 
       
       callbackURL: "/",
     });
@@ -97,7 +96,7 @@ const RegisterPa = () => {
         <div className="font-bold">OR</div>
         <div className="flex items-center justify-center ">Register with </div> 
         <div className=" flex items-center justify-center">
-                <button onClick={handleGoogleSignin} className="flex justify-center items-center text-center text-red-500 font-bold"> <span className="mx-4"><FaGoogle  /></span>Google</button> 
+                <button onClick={handleGoogleSignin} className="flex justify-center items-center text-center text-red-500 font-bold btn btn-success"> <span className="mx-4"><FaGoogle  /></span><span className="text-black">Signup With Google</span> </button> 
         </div>
         
       </div>
@@ -108,4 +107,4 @@ const RegisterPa = () => {
   );
 };
 
-export default RegisterPa;
+export default RegisterPage;

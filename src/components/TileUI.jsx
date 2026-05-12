@@ -24,24 +24,35 @@ export default function TileUI({ tile }) {
     }
 
     return (
-        <div className='container mx-auto bg-amber-100 flex items-center justify-center'>
-            <div className='p-10'>
-                <Image
-                    src={tile.image}
-                    width={800}
-                    height={800}
-                    alt={tile.description}
-                    className='object-cover rounded-xl'
+        <div className='container mx-auto bg-amber-100 '>
+            <div className=" flex items-center justify-center ">
+                    <div className='p-10 flex flex-col justify-center '>
+                        <div className="">
+                                 <Image
+                            src={tile.image}
+                            width={800}
+                            height={800}
+                            alt={tile.description}
+                            className='object-cover rounded-xl'
                 />
+                        </div>
+               
 
                 <h1 className='text-2xl font-bold mt-4'>{tile.title}</h1>
-
-                <p className='text-gray-600 mt-2'>{tile.description}</p>
-
+                    <div className="flex justify-center">
+                        <p className='text-gray-600 mt-2 text-2xl '>{tile.description}</p> 
+                    </div>
+                 
+                <p className=""> <strong >Dimensions : </strong> {tile.dimensions}</p>
                 <p className='mt-2'><strong>Price</strong>: ${tile.price}</p>
 
                 <p><strong>Material</strong>: {tile.material}</p>
+                <p>
+  <strong>In stock :</strong> {`${tile.inStock ? "Available" : "Not Available"}`}
+</p>
             </div>
+            </div>
+            
         </div>
     );
 }

@@ -70,7 +70,7 @@ const AllTilesPage = () => {
                 <div className="card-title">{tiles.title}</div>
 
                 <div>{tiles.description}</div>
-
+                <div className=""><strong>Price</strong>  : {tiles.price} USD</div>
                 <div className="card-actions justify-end">
                   <Link href={`/details/${tiles.id}`}>
                     <button className="btn btn-primary">

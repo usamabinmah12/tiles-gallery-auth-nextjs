@@ -73,7 +73,7 @@ const LoginPage = () => {
                 <div className="font-bold">OR</div>
                 <div className="flex items-center justify-center ">Login with </div> 
                 <div className=" flex items-center justify-center">
-                        <button onClick={handleGoogleSignin} className="flex justify-center items-center text-center text-red-500 font-bold"> <span className="mx-4"><FaGoogle  /></span>Google</button> 
+                        <button onClick={handleGoogleSignin} className="flex justify-center items-center text-center text-red-500 font-bold btn btn-success"> <span className="mx-4"><FaGoogle  /></span> <span className="text-black">Signin With Google</span> </button> 
                 </div>
                 
               </div>

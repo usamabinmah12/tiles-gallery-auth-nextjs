@@ -14,7 +14,7 @@ export default async function Home() {
       <div>
         <h3 className="text-3xl font-bold space-x-3.5 gap-x-3.5">Featured Tiles</h3>
       </div>
-      <div className="grid grid-cols-2 gap-2.5 justify-evenly m-4">
+      <div className="grid  sm:grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-2.5 justify-evenly m-4">
         {data.slice(0,4).map((tiles) => (
         <div key={tiles.id} className="card bg-base-100 shadow-sm m-3">
         <figure>
