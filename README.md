@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Project Name
+    Tiles Gallery Auth Next.js
 
-## Getting Started
+Purpose
+    Tiles Gallery Auth Next.js is a modern full-stack web application built to showcase a collection of premium tiles for interior design and      construction purposes. The project focuses on creating a clean and interactive user experience where users can browse tile collections,         view   detailed product information, and securely manage their accounts through authentication features.
 
-First, run the development server:
+Live URL : https://tiles-gallery-auth-nextjs.vercel.app
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Key Features
+    Featured tiles section with high-quality images and product descriptions
+    Dynamic product details page using Next.js dynamic routing
+    Secure authentication system using Better Auth
+    Email and password registration/login system
+    Google social login integration
+    MongoDB database integration for storing user and product data
+    Responsive and modern UI using Tailwind CSS and DaisyUI
+    Interactive icons and animations using Lucide React and React Icons
+    Smooth scrolling marquee effects using React Fast Marquee
+    Real-time toast notifications for login, registration, and other actions
+    Fully responsive design for mobile, tablet, and desktop devices
+    NPM Packages Used
+Framework & Core
+    next
+    react
+    react-dom
+Authentication
+    better-auth
+    @better-auth/mongo-adapter
+Database
+    mongodb
+Styling & UI
+    tailwindcss
+    daisyui
+    postcss
+Icons
+    react-icons
+    react-fast-marquee
+Forms & State Management
+    react-hook-form
+Notifications
+    react-toastify
+    
