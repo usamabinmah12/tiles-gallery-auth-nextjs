@@ -1,12 +1,12 @@
-Project Name
+Project Name : 
     Tiles Gallery Auth Next.js
 
-Purpose
+Purpose : 
     Tiles Gallery Auth Next.js is a modern full-stack web application built to showcase a collection of premium tiles for interior design and      construction purposes. The project focuses on creating a clean and interactive user experience where users can browse tile collections,         view   detailed product information, and securely manage their accounts through authentication features.
 
 Live URL : https://tiles-gallery-auth-nextjs.vercel.app
 
-Key Features
+Key Features : 
     Featured tiles section with high-quality images and product descriptions
     Dynamic product details page using Next.js dynamic routing
     Secure authentication system using Better Auth
@@ -19,24 +19,24 @@ Key Features
     Real-time toast notifications for login, registration, and other actions
     Fully responsive design for mobile, tablet, and desktop devices
     NPM Packages Used
-Framework & Core
+Framework & Core : 
     next
     react
     react-dom
-Authentication
+Authentication : 
     better-auth
     @better-auth/mongo-adapter
-Database
+Database : 
     mongodb
-Styling & UI
+Styling & UI : 
     tailwindcss
     daisyui
     postcss
-Icons
+Icons : 
     react-icons
     react-fast-marquee
-Forms & State Management
+Forms & State Management : 
     react-hook-form
-Notifications
+Notifications : 
     react-toastify
     
