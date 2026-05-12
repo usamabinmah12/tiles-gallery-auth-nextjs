@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   // const session = useSession();
-  const { data: session, status } = useSession();
+  const { data: session,isPending,  status } = useSession();
   // console.log(isPending, "ispending");
   console.log(session , "session");
   const User = session?.user;
@@ -61,7 +61,10 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end">
-  {User ? (
+  {isPending? 
+  <div className="text-2xl font-bold text-red-800"> Loading User State..... </div> :
+
+  User ? (
     <div className="flex gap-4 items-center">
       
       <h2 className="font-bold">Hello, {User?.name}</h2>

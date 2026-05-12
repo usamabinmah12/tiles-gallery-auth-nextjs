@@ -1,11 +1,10 @@
+'use client'
 import React from 'react';
 
 const loading = () => {
     return (
         <div>
-            <div className="text-5xl">
-                <span>The is loading...<span className="loading loading-infinity loading-xl"></span></span>
-            </div>
+            <h2 className='text-3xl'>Loading.....</h2>
         </div>
     );
 };

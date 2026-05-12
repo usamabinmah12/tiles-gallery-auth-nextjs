@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 const Banner = () => {
+  
   return (
     <div className="container mx-auto  space-y-10 m-12 p-2">
       <div className="hero-content flex-col lg:flex-row-reverse p-2">
